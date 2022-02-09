@@ -1,0 +1,53 @@
+
+{% block titulo %}{% endblock %}
+
+{% block estilos %}
+
+<style>
+
+    h1,h2{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 10px;
+                   
+    }
+    div {
+      border: 1px solid black;
+      align-items: center;
+      
+    }
+    
+</style>
+
+{% endblock %}
+
+{% block contenido %}
+
+
+<div class="container mt-5">
+    <h1>Current Time Display</h1>
+    <div>
+      <h2>{{ time }}</h2>
+      <h2>{{ time2 }}</h2>
+
+    </div>
+    <h2>JavaScript Clock</h2>
+    <div>
+      {% include 'app/reloj_js.html'%}
+    </div>
+      
+    
+</div>
+
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+  
+
+</script>
+
+
+{% endblock %}
